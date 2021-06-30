@@ -2,6 +2,7 @@ package com.educandoweb.projetospringjpahibernate.entities;
 
 import com.educandoweb.projetospringjpahibernate.entities.enums.OrderStatus;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -20,6 +21,7 @@ public class Order implements Serializable {
    private Instant moment;
 
    private Integer orderStatus;
+
 
    @ManyToOne
    @JoinColumn(name = "client_id")
