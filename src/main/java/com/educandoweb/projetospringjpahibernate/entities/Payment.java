@@ -1,5 +1,7 @@
 package com.educandoweb.projetospringjpahibernate.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.time.Instant;
@@ -13,6 +15,7 @@ public class Payment implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private Instant moment;
+
 
     @OneToOne
     @MapsId
@@ -43,6 +46,7 @@ public class Payment implements Serializable {
         this.moment = moment;
     }
 
+    @JsonIgnore
     public Order getOrder() {
         return order;
     }

@@ -79,6 +79,11 @@ public class Order implements Serializable {
       }
    }
 
+   public Double getTotal(){
+     double total = items.stream().mapToDouble(OrderItem::getSubTotal).sum();
+     return total;
+   }
+
    public Set<OrderItem> getItems(){
       return items;
    }
