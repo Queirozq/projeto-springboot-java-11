@@ -38,11 +38,11 @@ public class TestConfig implements CommandLineRunner {
         Category cat2 = new Category(null, "Books");
         Category cat3 = new Category(null, "Computers");
 
-        Product p1 = new Product(null, "The Lord of the Rings", "Lorem ipsum dolor sit amet, consectetur.", 90.5, "");
-        Product p2 = new Product(null, "Smart TV", "Nulla eu imperdiet purus. Maecenas ante.", 2190.0, "");
-        Product p3 = new Product(null, "Macbook Pro", "Nam eleifend maximus tortor, at mollis.", 1250.0, "");
-        Product p4 = new Product(null, "PC Gamer", "Donec aliquet odio ac rhoncus cursus.", 1200.0, "");
-        Product p5 = new Product(null, "Rails for Dummies", "Cras fringilla convallis sem vel faucibus.", 100.99, "");
+        Product p1 = new Product(null, "The Lord of the Rings", "A história narra o conflito contra o mal que se alastra pela Terra-média, através da luta de várias raças - Humanos, Anãos, Elfos, Ents e Hobbits - contra Orques, para evitar que o Anel do Poder volte às mãos de seu criador Sauron, o Senhor Sombrio.", 90.5, "");
+        Product p2 = new Product(null, "Smart TV Samsung", "Smart TV LED 40'' Samsung Tizen FHD 40T5300 2020 - WIFI, HDR para Brilho e Contraste, Plataforma Tizen", 2190.0, "");
+        Product p3 = new Product(null, "Apple MacBook Pro 13", "Apple MacBook Pro 13, Chip M1, 8GB RAM, 256GB SSD - Prata", 1250.0, "");
+        Product p4 = new Product(null, "PC Gamer", "Pc Gamer I7 Gtx1050Ti Hd1Tb Ssd120Gb 16Gb Monitor 19", 1200.0, "");
+        Product p5 = new Product(null, "Rails for Dummies", "Crie sites rapidamente com esta ferramenta poderosa use esta linguagem de programação fácil e gratuita para sites de comércio eletrônico e blogs", 100.99, "");
 
         productRepository.saveAll(Arrays.asList(p1, p2, p3, p4, p5));
         categoryRepository.saveAll(Arrays.asList(cat1, cat2, cat3));
