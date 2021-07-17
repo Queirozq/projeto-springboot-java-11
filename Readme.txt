@@ -1,0 +1,1 @@
+Aplicação em produção rodando no heroku feita com springboot e jpa/hibernate de um banco de dados com logical layers e modelo de dominio.
